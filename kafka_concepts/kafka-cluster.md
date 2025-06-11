@@ -19,3 +19,9 @@
     => Producers push data to brokers. When the new broker is started, all the producers search it and automatically sends a message to that new broker.
        kafka producer doesn't wait for acknowledgements from the broker and sends message as fast as the broker can handle.
        
+# Consumers:
+    => Since kafka brokers are stateless, which means that the consumer has to maintain how many messages have been consumed by using partition offset. If the consumer acknowledges a particular message offset, it implies that the consumer has consumed all prior messsages. The consumer issues an asynchronous pull request to the broker to have a buffer of bytes ready to consume. The consumers can rewind or skip to any point in partition simply by supplying an offset value.
+
+    Consumer offset value is notified by Zookeeper.
+    
+    
