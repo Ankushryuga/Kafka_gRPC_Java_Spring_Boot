@@ -40,4 +40,16 @@
       7. Monitoring and Troubleshooting: Kafka Manager.
       8. Cloud Tech: AWS
       9. Database integration: Ability to integrate kafka with various databases.
-      
+
+
+
+## Benefits of Kafka:
+    =>
+    1. Reliability: Kafka is distributed, partitioned, replicated and fault tolerance.
+    2. Scalability: Kafka messaging system scales easily without down time.
+    3. Durability: Kafka uses "Distributed commit log" which means messages persists on disk as fast as possible, hence its durable.
+    4. Performance: Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+
+## Note: Kafka is very fast and gurantees zero downtime and zero data loss.
+
+
