@@ -45,5 +45,22 @@
 # 10. Follower:
     => Node which follows leader instructions are called as follower, if the leader fails, one of the follower will automatically become the new leader.
 
+
+
+
+
+## Kafka Works - Core Flow
   
-  
+      [Producer] ─▶ [Kafka Topic (Partitioned)] ─▶ [Consumer Group(s)]
+
+
+| Component                | Role                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| **Producer**             | Publishes messages to topics                                                   |
+| **Topic**                | Logical feed name where messages are stored (divided into partitions)          |
+| **Partition**            | Kafka breaks each topic into multiple parts for parallelism                    |
+| **Broker**               | Kafka server that stores and serves data                                       |
+| **Consumer**             | Subscribes to topics and reads messages                                        |
+| **Consumer Group**       | Group of consumers that share topic load                                       |
+| **Offset**               | Position of a message in a partition                                           |
+| **Zookeeper** (optional) | Manages metadata and leader election (now replaced by **KRaft** in Kafka 3.x+) |
