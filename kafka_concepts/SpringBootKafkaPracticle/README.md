@@ -1,2 +1,2 @@
-Service1. user-service          ->     Producer
-Service2. file-upload-service   ->     Consumer with in-memory cache.
+1. Service1. user-service          ->     Producer
+2. Service2. file-upload-service   ->     Consumer with in-memory cache.
